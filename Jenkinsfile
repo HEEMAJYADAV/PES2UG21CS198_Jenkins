@@ -2,7 +2,7 @@ pipeline{
   agent any
   stages{
 
-    stages('Build'){
+    stage('Build'){
       steps{
         build 'PES2UG21CS205-1'
         sh 'g++ Sample.cpp -o output'
